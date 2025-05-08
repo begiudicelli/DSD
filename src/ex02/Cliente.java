@@ -1,9 +1,9 @@
 package ex02;
 
-public class Customer implements Runnable {
-    private final Barbershop barbershop;
+public class Cliente implements Runnable {
+    private final Barbearia barbershop;
 
-    public Customer(Barbershop barbershop) {
+    public Cliente(Barbearia barbershop) {
         this.barbershop = barbershop;
     }
 

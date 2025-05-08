@@ -3,7 +3,7 @@ package ex02;
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 
-public class Barbershop {
+public class Barbearia {
     private static final int TEMPO_CORTE = 3000;
     private static final int TEMPO_NOVO_CORTE = 9000;
 
@@ -15,7 +15,7 @@ public class Barbershop {
 
     private final Random r = new Random();
 
-    public Barbershop(int numeroCadeiras) {
+    public Barbearia(int numeroCadeiras) {
         this.cadeirasLivres = numeroCadeiras;
         this.mutex = new Semaphore(1);
         this.clientesEsperando = new Semaphore(0);
